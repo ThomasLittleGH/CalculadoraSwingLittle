@@ -1,0 +1,14 @@
+import java.awt.GridLayout;
+
+public class Main {
+    private static final int COLUMNAS = 4;
+    private static final int FILAS = 4;
+
+    public void main(String[] args) throws Exception {
+        Calculadora ventana = new Calculadora(); // Se instancia un objeto tipo formulario
+        GridLayout layout = new GridLayout(FILAS, COLUMNAS);
+        ventana.setLocationRelativeTo(null); // Centra en pantalla el formulario
+        ventana.setLayout(layout); // Define el tipo de contenedor a utilizar
+        ventana.setVisible(true); // El formulario se hace visible
+    }
+}
